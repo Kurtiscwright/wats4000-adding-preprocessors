@@ -1,3 +1,32 @@
 body {
+
   color: green;
+
+}
+
+
+.marketing {
+
+  a h4 {
+
+    &:link, &:active, &:visited {
+      color: $brand-warning;
+    }
+
+    &:hover {
+    color: $brand-success;
+  }
+}
+
+  p {
+    color: $brand-primary;
+  }
+
+}
+
+.container .jumbotron {
+
+  @include border-top-radius(0px);
+  @include border-bottom-radius(50px);
+
 }
